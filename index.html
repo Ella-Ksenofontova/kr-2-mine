@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой интернет-магазин</title>
+    <link rel="stylesheet" href="./css/custom.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg bg-primary-subtle">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">MyShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
+                aria-controls="navbar-links" aria-expanded="false" aria-label="Переключить навигацию">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse" aria-label="Основная навигация" id="navbar-links">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="./catalog.html" class="nav-link">Каталог</a></li>
+                    <li class="nav-item"><a href="./order.html" class="nav-link">Оформить заказ</a>
+                    </li>
+                    <li class="nav-item"><a href="./contacts.html" class="nav-link">Обратная связь</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main position-relative">
+        <section class="hero bg-body-tertiary d-flex flex-column px-5 py-1 justify-content-center align-items-start">
+            <h1 class="display-1">Мой интернет-магазин</h1>
+            <p class="hero__description">
+                Самый классный Интернет-магазин в России, а может, и в мире
+            </p>
+            <a class="btn btn-primary" href="#popular">Перейти к товарам</a>
+        </section>
+        <section class="section section_advantages px-5 py-3" id="advantages">
+            <h2 class="fw-normal mb-3">Почему стоит выбрать наш магазин?</h2>
+
+            <ul class="container overflow-hidden">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <li
+                            class="d-block d-flex flex-md-column 
+                    justify-content-center align-items-center text-md-center border rounded border-tertiary bg-body-tertiary gap-3 p-2 h-100">
+                            <img src="./images/speed.png" alt="" class="advantages-list__icon">
+                            <p class="advantages-list__description m-0">Быстрая доставка в пределах двух недель</p>
+                        </li>
+                    </div>
+                    <div class="col-md-4">
+                        <li
+                            class="d-block d-flex flex-md-column 
+                    justify-content-center align-items-center text-md-center border rounded border-tertiary bg-body-tertiary gap-3 p-2 h-100">
+                            <img src="./images/goods.png" alt="" class="advantages-list__icon">
+                            <p class="advantages-list__description m-0">Широкий ассортимент</p>
+                        </li>
+                    </div>
+                    <div class="col-md-4">
+                        <li
+                            class="d-block d-flex flex-md-column 
+                    justify-content-center align-items-center text-md-center border rounded border-tertiary bg-body-tertiary gap-3 p-2 h-100">
+                            <img src="./images/like.png" alt="" class="advantages-list__icon">
+                            <p class="advantages-list__description m-0">Высокое качество</p>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </section>
+        <section class="section section_popular px-5 py-3" id="popular">
+            <h2 class="fw-normal mb-3">Популярные товары</h2>
+
+            <div class="popular-goods container">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <article class="card h-100 w-100">
+                            <img src="./images/shoes.jpg" alt="Кроссовки" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Кроссовки</h3>
+                                <p class="card-text">Стильные и удобные кроссовки</p>
+                                <p class="card-text">Цена: 2500 руб.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="./product.html" class="b">Подробнее</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="card h-100 w-100">
+                            <img src="./images/pencils.jpg" alt="Цветные карандаши" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Цветные карандаши</h3>
+                                <p class="card-text">Яркие и прочные цветные карандаши</p>
+                                <p class="card-text">Цена: 200 руб.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="./product.html" class="b">Подробнее</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="card h-100 w-100">
+                            <img src="./images/perfume.jpg" alt="Парфюм" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Парфюм</h3>
+                                <p class="card-text">Ароматный парфюм для женщин</p>
+                                <p class="card-text">Цена: 5000 руб.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="./product.html" class="b">Подробнее</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+        </section>
+        <div class="aside-wrapper h-100 position-absolute top-0 end-0 pt-1">
+            <button class="btn btn-light position-sticky end-0 aside-open-button d-flex align-items-center"
+                data-bs-toggle="offcanvas" href="#aside-menu" role="button" aria-controls="aside-menu" id="open-aside">
+                <img src="./images/left-chevron.png" alt="Открыть боковую панель" class="aside-open-icon">
+            </button>
+            <aside class="offcanvas offcanvas-end" id="aside-menu">
+
+                <div class="offcanvas-header">
+                    <h2 class="offcanvas-title">Содержание страницы</h2>
+                    <button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <ul class="list-group">
+                    <a href="index.html" class="list-group-item list-group-item-action">Главная</a>
+                    <a href="#advantages" class="list-group-item list-group-item-action">Преимущества</a>
+                    <a href="#popular" class="list-group-item list-group-item-action">Популярные
+                        товары</a>
+                    <a href="#contacts" class="list-group-item list-group-item-action">Контакты</a>
+                </ul>
+            </aside>
+        </div>
+    </main>
+    <footer id="contacts" class="d-flex justify-content-between px-4 py-3 bg-primary-subtle">
+        <p class="m-0">&copy; 2026 Элла Ксенофонтова. Все права защищены.</p>
+        <p class="m-0"><a class="footer-phone" href="tel:89858944403">+7 (985)-894-44-03</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

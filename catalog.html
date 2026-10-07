@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="./css/custom.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg bg-primary-subtle">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">MyShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
+                aria-controls="navbar-links" aria-expanded="false" aria-label="Переключить навигацию">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse" aria-label="Основная навигация" id="navbar-links">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="./catalog.html" class="nav-link">Каталог</a></li>
+                    <li class="nav-item"><a href="./order.html" class="nav-link">Оформить заказ</a>
+                    </li>
+                    <li class="nav-item"><a href="./contacts.html" class="nav-link">Обратная связь</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main class="main p-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="display-1">Каталог</h1>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilters"
+                aria-controls="offcanvasFilters">
+                <div class="visually-hidden">Фильтры</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sliders"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z" />
+                </svg>
+            </button>
+        </div>
+        <aside class="offcanvas offcanvas-start p-3" tabindex="-1" id="offcanvasFilters">
+            <h2>Фильтры</h2>
+            <form class="filters-panel">
+                <h3 class="heading filters-panel__title">Цена</h3>
+                <div class="filters-panel__price">
+                    <label for="price-from" class="form-label">От: </label>
+                    <input type="number" id="price-from" class="form-control">
+                    <label for="price-to" class="form-label">До: </label>
+                    <input type="number" id="price-to" class="form-control">
+                </div>
+                <div class="form-check mt-2">
+                    <input type="checkbox" id="good-rating" class="form-check-input">
+                    <label for="good-rating" class="form-check-label">Высокий рейтинг</label> <br />
+                    <span class="form-text">4 и более ⭐</span>
+                </div>
+            </form>
+        </aside>
+        <div class="d-flex flex-wrap gap-4">
+            <article class="card">
+                <img src="./images/shoes.jpg" alt="Кроссовки" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Кроссовки <span class="badge bg-danger text-white rounded-pill fs-6">Новинка!</span></h3>
+                    <p class="card-text">Стильные и удобные кроссовки</p>
+                    <p class="card-text">Цена: 2500 руб.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="./product.html">Подробнее</a>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./images/pencils.jpg" alt="Цветные карандаши" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Цветные карандаши</h3>
+                    <p class="card-text">Яркие и прочные цветные карандаши</p>
+                    <p class="card-text">Цена: 200 руб.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="./product.html">Подробнее</a>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./images/perfume.jpg" alt="Парфюм" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Парфюм</h3>
+                    <p class="card-text">Ароматный парфюм для женщин</p>
+                    <p class="card-text">Цена: 5000 руб.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="./product.html">Подробнее</a>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./images/book.jpg" alt="Книга" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Книга</h3>
+                    <p class="card-text">Очень интересная книга</p>
+                    <p class="card-text">Цена: 400 руб.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="./product.html">Подробнее</a>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./images/clock.jpg" alt="Часы настенные" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Настенные часы <span class="badge bg-primary text-white rounded-pill fs-6">Скидка!</span></h3>
+                    <p class="card-text">Полезный и красивый предмет для Вашего интерьера</p>
+                    <p class="card-text">Цена: <del class="old-price">1200</del> 900 руб.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="./product.html">Подробнее</a>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./images/coat.jpg" alt="Пальто" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Пальто</h3>
+                    <p class="card-text">Стильное демисезонное пальто</p>
+                    <p class="card-text">Цена: 6500 руб.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="./product.html">Подробнее</a>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./images/doll.jpg" alt="Кукла-пупс" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Кукла-пупс</h3>
+                    <p class="card-text">Отличный подарок для девочек</p>
+                    <p class="card-text">Цена: 2200 руб.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="./product.html">Подробнее</a>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./images/mobile phone.jpg" alt="Мобильный телефон" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Мобильный телефон</h3>
+                    <p class="card-text">Стильный дизайн, мощный аккумулятор, много встроенных
+                        функций</p>
+                    <p class="card-text">Цена: 9000 руб.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="./product.html">Подробнее</a>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./images/necklace.jpg" alt="Ожерелье" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Ожерелье <span class="badge bg-success text-white rounded-pill fs-6">Хит!</span></h3>
+                    <p class="card-text">Стильный аксессуар для любого образа</p>
+                    <p class="card-text">Цена: 500 руб.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="./product.html">Подробнее</a>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer id="contacts" class="d-flex justify-content-between px-4 py-3 bg-primary-subtle">
+        <p class="m-0">&copy; 2026 Элла Ксенофонтова. Все права защищены.</p>
+        <p class="m-0"><a class="footer__link" href="tel:89858944403">+7 (985)-894-44-03</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

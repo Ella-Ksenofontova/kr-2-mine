@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратная связь</title>
+    <link rel="stylesheet" href="./css/custom.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body class="d-flex flex-column justify-content-between min-vh-100">
+    <header class="navbar navbar-expand-lg bg-primary-subtle">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">MyShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
+                aria-controls="navbar-links" aria-expanded="false" aria-label="Переключить навигацию">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse" aria-label="Основная навигация" id="navbar-links">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="./catalog.html" class="nav-link">Каталог</a></li>
+                    <li class="nav-item"><a href="./order.html" class="nav-link">Оформить заказ</a>
+                    </li>
+                    <li class="nav-item"><a href="./contacts.html" class="nav-link">Обратная связь</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="p-3">
+        <section class="faq container">
+            <h1 class="display-3">Часто задаваемые вопросы</h1>
+            <div class="alert alert-success" hidden id="contact-success">Заявка успешно отправлена!</div>
+            <div class="accordion mb-4">
+                <div class="accordion-item" id="faq-accordion-1">
+                    <h2 class="accordion-header" id="faq-accordion-1-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq-accordion-1-collapse">
+                            Сколько стоит доставка?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="faq-accordion-1-collapse">
+                        <div class="accordion-body">
+                            Доставка всех товаров абсолютно бесплатная!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item" id="faq-accordion-2">
+                    <h2 class="accordion-header" id="faq-accordion-2-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq-accordion-2-collapse">
+                            Каков срок возврата?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="faq-accordion-2-collapse">
+                        <div class="accordion-body">
+                            Если Вас не устроило качество товара, то Вы можете вернуть его в течение двух недель.
+                            Обратите
+                            внимание, что некоторые категории товаров не подлежат возврату.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>Всё ещё остались вопросы?</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contact-us">Связаться с
+                нами</button>
+        </section>
+        <div class="modal fade" id="contact-us" tabindex="-1" aria-labelledby="contact-us-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="contact-us-label">Связаться с нами</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть" id="close-contact-form"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-secondary">Заполните форму, и мы свяжемся с Вами в течение двух рабочих дней</p>
+                        <form class="contacts-form" id="contacts-form" onsubmit="event.preventDefault(); document.getElementById('close-contact-form').click(); document.getElementById('contact-success').hidden = false; this.reset();">
+
+                            <label for="name" class="form-label">Имя и фамилия:</label>
+                            <input type="text" id="name" class="form-control" required>
+                            <label for="email" class="form-label">Адрес электронной почты:</label>
+                            <input type="text" id="email" class="form-control" required>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Что бы Вы хотели обсудить?</label>
+                                <textarea id="subject" class="form-control" required></textarea>
+                            </div>
+                            <button class="btn btn-primary mt-3">Отправить</button>
+                        </form>
+                        </dialog>
+    </main>
+    <footer id="contacts" class="d-flex justify-content-between px-4 py-3 bg-primary-subtle">
+        <p class="m-0">&copy; 2026 Элла Ксенофонтова. Все права защищены.</p>
+        <p class="m-0"><a class="footer__link" href="tel:89858944403">+7 (985)-894-44-03</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
